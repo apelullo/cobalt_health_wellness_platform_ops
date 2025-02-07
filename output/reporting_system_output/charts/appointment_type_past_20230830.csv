@@ -1,0 +1,23 @@
+appointment_type_name,appts_past_all,appts_past_90day,appts_past_30day
+1:1 Appointment,16,0.0,0.0
+1:1 Appointment with Psychotherapist,1153,0.0,0.0
+1:1 CTSA Intake Appointment,4,0.0,0.0
+1:1 Initial Appointment with Psychotherapist,7,0.0,0.0
+1:1 Psychiatrist Follow-ups,19,0.0,0.0
+1:1 Session with Chaplain,11,0.0,0.0
+1:1 Session with Psychiatrist,82,0.0,0.0
+1:1 Session with Resilience Coach,816,0.0,0.0
+1:1 Strength and Training Specialist,23,0.0,0.0
+1:1 With Coach,3,3.0,1.0
+1:1 With EAP Clinician,198,59.0,17.0
+1:1 with Care Manager,1691,60.0,26.0
+1:1 with Dietitian,1,0.0,0.0
+1:1 with Pain Specialist,1,0.0,0.0
+1:1 with Peer,23,0.0,0.0
+1:1 with Psychiatric Nurse Practitioner,15,0.0,0.0
+CCT Intake Appointment,1,0.0,0.0
+COBALT,9,7.0,0.0
+Coaching Visit,168,28.0,9.0
+Followup Visit,162,0.0,0.0
+Initial Visit,215,0.0,0.0
+The Chaplain is In - for You,26,3.0,2.0

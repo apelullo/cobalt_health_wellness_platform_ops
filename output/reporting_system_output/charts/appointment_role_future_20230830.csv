@@ -1,0 +1,5 @@
+support_role_id,providers_future_all,appts_future_all,providers_future_90day,appts_future_90day,providers_future_30day,appts_future_30day
+CARE_MANAGER,1,7,1,7,1,7
+CHAPLAIN,1,1,1,1,1,1
+COACH,3,5,3,5,3,5
+UNDEFINED,2,7,2,7,2,7

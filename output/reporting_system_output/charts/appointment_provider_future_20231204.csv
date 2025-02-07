@@ -1,0 +1,6 @@
+support_role_id,provider_id,appts_future_all,appts_future_90day,appts_future_30day
+CLINICIAN,688e0886-b776-4b95-89e6-2329a123ccfc,2,2,2
+COACH,3e8ecc31-e98d-4e27-b99d-53b16994bb3c,1,1,1
+COACH,a8b8eb8a-6335-49fa-b46c-2b0483abcde2,1,1,1
+UNDEFINED,9eb160cb-9db6-4a79-a3c1-83ac6a403db9,1,1,1
+UNDEFINED,ffb76abc-3cfe-4482-9b01-4e496823d193,3,3,3

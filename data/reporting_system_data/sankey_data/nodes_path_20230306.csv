@@ -1,0 +1,26 @@
+,severity,label,color,idx,level
+0,start,Assessment Start,"rgba(192,192,192,0.8)",0,0
+1,no_symptoms,PHQ4: no_symptoms,"rgba(0,0,255,0.8)",1,0
+2,mild,PHQ4: mild,"rgba(0,255,0,0.8)",2,0
+3,moderate,PHQ4: moderate,"rgba(255,128,0,0.8)",3,0
+4,severe,PHQ4: severe,"rgba(255,0,0,0.8)",4,0
+5,inconclusive,PHQ4: inconclusive,"rgba(192,192,192,0.8)",5,0
+6,no_symptoms,PHQ9: no_symptoms,"rgba(0,0,255,0.8)",6,1
+7,mild,PHQ9: mild,"rgba(0,255,0,0.8)",7,1
+8,moderate,PHQ9: moderate,"rgba(255,128,0,0.8)",8,1
+9,moderately_severe,PHQ9: moderately_severe,"rgba(204,0,102,0.8)",9,1
+10,severe,PHQ9: severe,"rgba(255,0,0,0.8)",10,1
+11,inconclusive,PHQ9: inconclusive,"rgba(192,192,192,0.8)",11,1
+12,no_symptoms,GAD7: no_symptoms,"rgba(0,0,255,0.8)",12,2
+13,mild,GAD7: mild,"rgba(0,255,0,0.8)",13,2
+14,moderate,GAD7: moderate,"rgba(255,128,0,0.8)",14,2
+15,severe,GAD7: severe,"rgba(255,0,0,0.8)",15,2
+16,inconclusive,GAD7: inconclusive,"rgba(192,192,192,0.8)",16,2
+17,no_symptoms,PCPTSD: no_symptoms,"rgba(0,0,255,0.8)",17,3
+18,followup_sensitivity,PCPTSD: followup_sensitivity,"rgba(255,128,0,0.8)",18,3
+19,followup_efficiency,PCPTSD: followup_efficiency,"rgba(255,0,0,0.8)",19,3
+20,inconclusive,PCPTSD: inconclusive,"rgba(192,192,192,0.8)",20,3
+21,mild,escalation: mild,"rgba(0,255,0,0.8)",21,4
+22,moderate,escalation: moderate,"rgba(255,128,0,0.8)",22,4
+23,severe,escalation: severe,"rgba(255,0,0,0.8)",23,4
+24,inconclusive,escalation: inconclusive,"rgba(192,192,192,0.8)",24,4

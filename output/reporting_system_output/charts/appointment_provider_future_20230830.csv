@@ -1,0 +1,8 @@
+support_role_id,provider_id,appts_future_all,appts_future_90day,appts_future_30day
+CARE_MANAGER,688e0886-b776-4b95-89e6-2329a123ccfc,7,7,7
+CHAPLAIN,d78e6c6b-2932-40af-b50c-5a356a7abe96,1,1,1
+COACH,3d781e2d-3726-480a-9070-bbe2bd4851ef,3,3,3
+COACH,a8b8eb8a-6335-49fa-b46c-2b0483abcde2,1,1,1
+COACH,fa7d89ad-a40f-480c-8b09-d11877a3477a,1,1,1
+UNDEFINED,9eb160cb-9db6-4a79-a3c1-83ac6a403db9,1,1,1
+UNDEFINED,ffb76abc-3cfe-4482-9b01-4e496823d193,6,6,6

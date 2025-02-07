@@ -1,0 +1,9 @@
+support_role_id,providers_past_all,appts_past_all,providers_past_90day,appts_past_90day,providers_past_30day,appts_past_30day
+CARE_MANAGER,6,505,,,,
+CHAPLAIN,2,41,1.0,4.0,1.0,1.0
+CLINICIAN,51,2538,1.0,98.0,1.0,15.0
+COACH,37,1071,6.0,47.0,6.0,15.0
+OTHER,2,2,,,,
+PEER,3,11,,,,
+PSYCHIATRIST,34,443,,,,
+UNDEFINED,4,268,3.0,66.0,3.0,26.0

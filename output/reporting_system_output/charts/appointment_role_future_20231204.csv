@@ -1,0 +1,4 @@
+support_role_id,providers_future_all,appts_future_all,providers_future_90day,appts_future_90day,providers_future_30day,appts_future_30day
+CLINICIAN,1,2,1,2,1,2
+COACH,2,2,2,2,2,2
+UNDEFINED,2,4,2,4,2,4

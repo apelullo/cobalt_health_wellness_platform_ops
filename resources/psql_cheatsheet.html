@@ -1,0 +1,238 @@
+
+<!-- saved from url=(0086)http://www.postgresonline.com/special_feature.php?sf_name=postgresql83_psql_cheatsheet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>PSQL 8.3 Cheatsheet</title></head>
+<body>
+	<style>
+	#tblcheatsheet {
+	border: solid;
+	border-width: 1px;
+	font-family: "courier new";
+	font-size: small;
+	width: 100%;
+}
+	#tblcheatsheet TABLE TD {font-family:courier;font-size:9px}
+	#tblcheatsheet h3 {margin:0px;color:white;font-size:8px;font-family:"Arial Bold";background-color:#0096C8;width:100%}
+	.primary {color:#993333;font-weight:bold}
+	.drlegend {color:white;font-weight:bold}
+	#tblcheatsheet TD.tdfunc {background-color:#FFFF99}
+	#tblcheatsheet TD.tdop {background-color:#f7f7e9}
+	#tblcheatsheet .example {font-size:10px;font-family:"courier new"}
+	.flist {font-weight:bold;font-family:"courier new"}
+	#tblcheatsheet TD .comment {font-size:7px;color:green;font-family:arial}
+	#tblcheatsheet h2 {margin:0px;color:white;font-size:11px;font-family:"Arial Bold";background-color:#0096C8;text-transform:uppercase;width:100%}
+</style>
+<table id="tblcheatsheet">
+<tbody><tr><td><h2>PostgreSQL 8.3 PSQL Cheat Sheet</h2>
+psql is located in the bin folder of the PostgreSQL install and PgAdmin III install.</td></tr>
+<tr><td class="tdfunc"><h3>This is psql 8.3.5, the PostgreSQL interactive terminal.</h3>
+<b>Usage: </b> <span class="primary">psql</span> [OPTIONS]... [DBNAME [USERNAME]]</td>
+</tr>
+<tr><td>
+<table style="width:100%" border="0"><tbody><tr><td colspan="3"><h3>General options:</h3></td></tr>
+<tr>
+<td style="width:30%"><pre class="primary">  -c COMMAND
+  -d, --dbname=NAME      
+  -f, --file=FILENAME 
+  --help   
+  -l, --list          
+  -v NAME=VALUE      
+  --version
+  -X</pre></td>
+<td style="background-color:white"><pre class="flist">  run only single command (SQL or internal) and exit
+  specify database name to connect to (default: "<em>logged in username here</em>")
+  execute commands from file, then exit
+  show this help, then exit
+  list available databases, then exit
+  set psql variable NAME to VALUE
+  output version information, then exit
+  do not read startup file (~/.psqlrc)</pre></td>
+</tr>
+</tbody></table>
+<table style="width:100%"><tbody><tr><td colspan="3"><h3>Interactive Console:</h3></td></tr>
+<tr>
+<td style="width:20%"><pre class="primary"><b>TYPE:</b>  \copyright 
+       \h for help with SQL commands
+       \? for help with psql commands
+       \g or terminate with semicolon to execute query
+       \q to quit
+<b>GENERAL:</b>
+  \c[onnect] [DBNAME|- USER|- HOST|- PORT|-]                
+  \cd [DIR]     
+  \encoding [ENCODING]
+  \h [NAME]      
+  \set [NAME [VALUE]]
+  \timing  
+  \unset NAME
+  \prompt [TEXT] NAME
+  \! [COMMAND]
+ 
+<b>QUERY BUFFER:</b>
+  \e [FILE]
+  \g [FILE]
+  \p
+  \r
+  \w FILE
+  
+<b>INPUT/OUTPUT:</b>
+  \echo [STRING]
+  \i FILE
+  \o [FILE]
+  \qecho [STRING]
+  
+<b>INFORMATIONAL:</b>
+  \d [NAME]
+  \d{t|i|s|v|S} [PATTERN] (add "+" for more detail)
+  \da [PATTERN]
+  \db [PATTERN]
+  \dc [PATTERN]
+  \dC 
+  \dd [PATTERN]
+  \dD [PATTERN]
+  \df [PATTERN]
+  \dF [PATTERN]
+  \dFd [PATTERN]
+  \dFt [PATTERN]
+  \dFp [PATTERN]
+  \dg [PATTERN]
+  \dn [PATTERN]
+  \do [NAME]
+  \dl  
+  \dp [PATTERN] 
+  \dT [PATTERN]
+  \du [PATTERN]
+  \l    
+  \z [PATTERN]
+  
+<b>FORMATTING</b>
+  \a 
+  \C [STRING]
+  \f [STRING]
+  \H
+  \pset NAME [VALUE] 
+  
+  
+  \t 
+  \T [STRING]
+  \x
+  
+<b>COPY, LARGE OBJECT</b>
+  \copy ...  
+  \lo_export LOBOID FILE
+  \lo_import FILE [COMMENT]
+  \lo_list
+  \lo_unlink LOBOID
+</pre></td>
+
+<td style="background-color:white"><pre class="flist">for distribution terms
+for help with SQL commands
+for help with psql commands
+or terminate with semicolon to execute query
+to quit
+
+connect to new database
+change the current working directory
+show or set client encoding
+help on syntax of SQL commands, * for all commands
+set internal variable, or list all if no parameters
+toggle timing of commands (currently off)
+unset (delete) internal variable
+prompt user to set internal variable
+execute command in shell or start interactive shell
+
+
+edit the query buffer (or file) with external editor
+send query buffer to server (and results to file or |pipe)
+show the contents of the query buffer
+reset (clear) the query buffer
+write query buffer to file
+
+
+write string to standard output
+execute commands from file
+send all query results to file or |pipe
+write string to query output stream (see \o)
+
+
+describe table, index, sequence, or view
+list tables/indexes/sequences/views/system tables
+list aggregate functions
+list tablespaces (add "+" for more detail)
+list conversions
+list casts
+show comment for object
+list domains
+list functions (add "+" for more detail)
+list text search configurations (add "+" for more detail)
+list text search dictionaries (add "+" for more detail)
+list text search templates
+list text search parsers (add "+" for more detail)
+list groups
+list schemas (add "+" for more detail)
+list operators
+list large objects, same as \lo_list
+list table, view, and sequence access privileges
+list data types (add "+" for more detail)
+list users
+list all databases (add "+" for more detail)
+list table, view, and sequence access privileges (same as \dp)
+
+
+toggle between unaligned and aligned output mode
+set table title, or unset if none
+show or set field separator for unaligned query output
+toggle HTML output mode (currently off)
+set table output option 
+  (NAME := {format|border|expanded|fieldsep|footer|null|numericlocale|recordsep
+  |tuples_only|title|tableattr|pager})
+show only rows (currently off)
+set HTML &lt;table&gt; tag attributes, or unset if none
+toggle expanded output (currently off)
+
+
+perform SQL COPY with data stream to the client host
+LOBOID FILE
+FILE [COMMENT]
+
+large object operations</pre></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr><td><pre><h3>Connection options:</h3>
+  -h, --host=HOSTNAME      database server host or socket directory
+  -p, --port=PORT          database server port number
+  -U, --username=NAME      connect as specified database user
+  -W, --password           force password prompt (should happen automatically)
+  -e, --exit-on-error      exit on error, default is to continue
+  -d DBNAME                some database</pre></td>
+</tr>
+<tr><td colspan="2"><table width="100%"><tbody><tr><td><h3>psql automated shell examples</h3><pre class="example"><code><span class="comment">restore whole server</span>
+psql --host=localhost --username=<i>someuser</i> -f <i>/path/to/pgdumpall.sql</i>
+<span class="comment">Run an sql batch script against a database</span>
+psql -h localhost -U <i>someuser</i> -d <i>somedb</i> -f <i>/path/to/somefile.sql</i>
+<span class="comment">Run an sql batch script against a database and send output to file</span>
+psql -h localhost -U <i>someuser</i> -d <i>somedb</i> -f <i>/path/to/scriptfile.sql </i> -o <i>/path/to/outputfile.txt</i>
+<span class="comment">Run a single statement against a db</span>
+psql -U postgres -d pagila -c "CREATE TABLE test(some_id serial PRIMARY KEY, some_text text);"
+<span class="comment">Output data in html format</span>
+psql -h someserver -p 5432 -U someuser -d somedb -H -c "SELECT * FROM sometable" -o mydata.html
+</code></pre></td>
+</tr>
+<tr><td><h3>psql Interactive mode</h3><pre class="example"><code><span class="comment">Launch Interactive session</span>
+psql -h localhost -U postgres -d somedb
+<span class="comment">View help for SELECT * LIMIT</span>
+\h  SELECT * LIMIT
+<span class="comment">List all tables in db with descriptions</span>
+\dt+
+<span class="comment">List all tables in db with <b>s</b> in the name</span>
+\dt *s*
+<span class="comment">Cancel out of MORE screen</span>
+:q</code></pre></td></tr></tbody></table>
+</td></tr>
+<tr><td colspan="3" align="center"><a href="http://www.postgresonline.com/">http://www.postgresonline.com</a></td></tr>
+</tbody></table>
+
+
+	
+
+</body></html>
