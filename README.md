@@ -8,5 +8,5 @@
     * experimental design and testing framework for operational and academic research
     * controlled, targeted analyses evaluating the impact of product features and servies, UI/UX design, marketing campaigns, customer education workshops, and related outreach initiatives on user behavior
     * data-driven decision support for product/platform evolution to optimize *content engagement, service utilization, and treatment outcomes*
-* **Stakeholder Management**: Interpret experimental results and communicate key insights to effectively influence strategic decisions that drive critical business outcomes and ensure the long-term success of the platform.
+* **Stakeholder Relationships**: Interpret experimental results and communicate key insights to effectively influence strategic decisions that drive critical business outcomes and ensure the long-term success of the platform.
   * Tailor messaging for collaboration with diverse, cross-functional team of in-house and contract developers, project and product managers, researchers, healthcare professionals, and health system executives.
