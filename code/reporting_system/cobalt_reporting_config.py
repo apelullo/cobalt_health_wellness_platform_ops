@@ -28,7 +28,7 @@ DB_REPORTING_WEEKLY_NAME = 'reporting_weekly_rollup'
 
 #### Save Paths ####
 # Main Cobalt project path
-PROJECT_PATH = '/Users/arthurpelullo/Desktop/career/portfolio/public_portfolio/operations_projects/cobalt/'
+PROJECT_PATH = '/' # replace as needed
 
 # Top level paths
 CODE_PATH = PROJECT_PATH + 'code/'
