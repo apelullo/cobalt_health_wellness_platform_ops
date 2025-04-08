@@ -10,3 +10,9 @@
     * data-driven decision support for product/platform evolution to optimize *content engagement, service utilization, and treatment outcomes*
 * **Stakeholder Relationships**: Interpret experimental results and communicate key insights to effectively influence strategic decisions that drive critical business outcomes and ensure the long-term success of the platform.
   * Tailor messaging for collaboration with diverse, cross-functional team of in-house and contract developers, project and product managers, researchers, healthcare professionals, and health system executives.
+
+---
+
+### Sankey Diagram of Assessment Outcomes
+* A Sankey "flow diagram" visualizing new users' results for the PHQ4, PHQ9, GAD7, and PCPTSD mental health assessments and their associated care-escalation-level as determined by a physician-developed composite scoring algorithm.
+![Sankey Diagram of Assessment Outcomes](resources/cobalt_assessment_sankey_diagram.png)
